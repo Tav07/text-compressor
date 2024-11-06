@@ -91,7 +91,7 @@ text-compressor-main1/
 └── README.md     
 ```
 
-## ¿Cómo usar el programa?
+## How to use the program?
 
 - Before running any command, you need to make a copy of the 'secret_config_example.py' file and rename it as follows:
 'secret_config.py', inside this file that you copied is where you will insert your NeonTech credentials to be able to use the database. If this step is not done the program will not work.
