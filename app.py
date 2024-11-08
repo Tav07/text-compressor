@@ -16,6 +16,11 @@ app.config['SECRET_KEY'] = 'your_secret_key_here'
 def index():
     return render_template('index.html', result_text=None)
 
+@app.route('/view_table')
+def view_table():
+    return render_template('view_table.html')
+
+
 @app.route('/compress', methods=['POST'])
 def compress_text():
     text_to_compress = request.form.get('text_to_compress')
@@ -50,5 +55,7 @@ def decompress_text():
         flash(str(e))
         return render_template('index.html', result_text=None)
 
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
+
