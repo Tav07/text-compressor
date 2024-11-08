@@ -1,4 +1,4 @@
-Project developed by Mario Fernando Andrade Rojas e Isabella Ceballos Bedoya
+Project developed by Gustavo Mendez and Juliana Franco
 
 # Text compressor and decompressor.
 
