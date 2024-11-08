@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compresión y Descompresión de Texto - RLE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Compresión y Descompresión de Texto - RLE</h1>
+        
+        <!-- Formulario de compresión -->
+        <form method="POST" action="/compress" class="my-4">
+            <div class="mb-3">
+                <label for="text_to_compress" class="form-label">Texto a Comprimir:</label>
+                <textarea class="form-control" id="text_to_compress" name="text_to_compress" rows="3" placeholder="Escribe el texto aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Comprimir</button>
+        </form>
+
+        <!-- Formulario de descompresión -->
+        <form method="POST" action="/decompress" class="my-4">
+            <div class="mb-3">
+                <label for="text_to_decompress" class="form-label">Texto a Descomprimir:</label>
+                <textarea class="form-control" id="text_to_decompress" name="text_to_decompress" rows="3" placeholder="Pega el texto comprimido aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Descomprimir</button>
+        </form>
+
+        <!-- Sección para mostrar el resultado del texto comprimido o descomprimido -->
+        {% if result_text %}
+            <div class="alert alert-info mt-4">
+                <strong>Resultado:</strong>
+                <textarea class="form-control mt-2" rows="3" readonly>{{ result_text }}</textarea>
+            </div>
+        {% endif %}
+
+        <!-- Mensajes Flash (errores o confirmaciones) -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-warning mt-4">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+        <!-- Botón para acceder al historial de compresión -->
+        <div class="text-center mt-4">
+            <a href="/templates/view_table.html" class="btn btn-info">Ver Historial de Compresión</a>
+        </div>
+    </div>
+</body>
+</html>
