@@ -21,7 +21,7 @@ Data compression is the reduction of the volume of data that can be processed to
 				
 		2.Perform all of the following procedure without creating the virtual environment:
 
-			- Instalar la libreria psycopg2-binary
+			- Install the library psycopg2-binary
 
 				- To install it through pip, run the following command in your preferred terminal:
 				<pre>pip install psycopg2-binary</pre>
@@ -99,6 +99,12 @@ text-compressor-main1/
 
 - To run the encryption program from the console interface, you must enter the following command:
 	- <pre>python app.py</pre>
+
+## Link of the page
+
+You just need to copy and paste this link in your navigator
+http://127.0.0.1:5000/
+
 
 ## How to run the tests?
 
