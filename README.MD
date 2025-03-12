@@ -22,21 +22,6 @@ git clone https://github.com/tu_usuario/lru_cache.git
 cd lru_cache
 ```
 
-3. Crea y activa un entorno virtual (opcional):  
-```bash
-python -m venv venv
-source venv/bin/activate     # MacOS/Linux
-.\venv\Scripts\activate      # Windows
-```
-
-4. Instala las dependencias:  
-```bash
-pip install -r requirements.txt
-```
-
-> **Nota:** Asegúrate de tener `Python 3.8+` instalado.
-
----
 
 ## Uso
 ### 1. Ejecutar la caché manualmente:
