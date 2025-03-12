@@ -67,11 +67,6 @@ python -m unittest lru_test.py
 
 ---
 
-## Explicación Técnica
-### Estructura de datos
-- **Diccionario (`O(1)`)** → Para búsquedas rápidas por clave.  
-- **Lista doblemente ligada (`O(1)`)** → Para manejar el orden de acceso y eliminar el menos usado de forma eficiente.  
-
 ### Operaciones clave
 | Método | Descripción | Complejidad |
 |--------|-------------|-------------|
@@ -125,15 +120,5 @@ data = fetch_data(url, cache)
 # Segunda solicitud → Se obtiene de la caché
 data = fetch_data(url, cache)
 ```
-
----
-
-## Contribuciones
-Contribuciones son bienvenidas. Si deseas mejorar el código o agregar nuevas funciones, puedes abrir un **pull request** o crear un **issue**.
-
----
-
-## Licencia
-Este proyecto está bajo la licencia **MIT**. Siéntete libre de usarlo y modificarlo.  
 
 
