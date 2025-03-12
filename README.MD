@@ -14,11 +14,12 @@ La implementación utiliza:
 ## Instalación
 1. Clona el repositorio:  
 ```bash
-git clone https://github.com/tu_usuario/lru_cache.git
+git clone https://github.com/Pipe0001/LRU_Cache
 ```
 
 2. Navega al directorio del proyecto:  
 ```bash
+cd __pycache__
 cd lru_cache
 ```
 
@@ -38,15 +39,7 @@ Agregando C=3
 Agregando D=4 (debe eliminar B)
 Recuperando B: -1
 Recuperando C: 3
-```
 
-### 2. Probar integración con una API:
-```bash
-python app.py
-```
-
-Salida esperada:
-```bash
 [INFO] Haciendo primera petición a la API...
 [INFO] Haciendo segunda petición (debe venir de la caché)...
 ```
