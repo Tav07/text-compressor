@@ -39,6 +39,7 @@ Agregando C=3
 Agregando D=4 (debe eliminar B)
 Recuperando B: -1
 Recuperando C: 3
+```
 
 
 ---
