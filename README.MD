@@ -40,9 +40,6 @@ Agregando D=4 (debe eliminar B)
 Recuperando B: -1
 Recuperando C: 3
 
-[INFO] Haciendo primera petición a la API...
-[INFO] Haciendo segunda petición (debe venir de la caché)...
-```
 
 ---
 
