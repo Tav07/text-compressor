@@ -1,12 +1,6 @@
-Claro, aquí tienes el contenido sin stickers ni emojis para que se vea más profesional:
-
----
-
-```markdown
 # LRU Cache Implementation
 Una implementación eficiente de una caché LRU (Least Recently Used) usando una lista doblemente ligada y un diccionario para lograr operaciones en **O(1)**.
 
----
 
 ## Descripción
 Este proyecto implementa una caché LRU que permite almacenar un número limitado de elementos y eliminar automáticamente el **menos recientemente usado** cuando se alcanza la capacidad máxima.  
@@ -16,7 +10,6 @@ La implementación utiliza:
 - Pruebas unitarias que validan el comportamiento de la caché.  
 - Integración con una **API externa** para demostrar el uso práctico de la caché.  
 
----
 
 ## Instalación
 1. Clona el repositorio:  
