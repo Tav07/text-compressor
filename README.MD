@@ -52,7 +52,7 @@ python -m unittest lru_test.py
 
 **Pruebas incluidas:**  
 - Inserción y recuperación de datos (`put` y `get`)  
-- Eliminación del valor menos usado (`eviction`)  
+- Eliminación del valor menos usado  
 - Actualización de valores existentes  
 - Mejora en el tiempo de respuesta al usar la caché con una API externa  
 
